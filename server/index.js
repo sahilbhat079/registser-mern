@@ -5,7 +5,12 @@ const mongoose=require('mongoose');
 const cors =require('cors')
 const Employemodel =require('./models/Employe')
 app.use(express.json())
-app.use(cors())
+app.use(cors(
+{
+origin:[""],
+methods:["POST","GET"],
+credentials:true
+} ))
 
 mongoose.connect("mongodb+srv://stephenjames079:leOOpIp4pYWQHd0i@cluster0.swsrryq.mongodb.net/register?retryWrites=true&w=majority")
 .then(()=>console.log('connected to the database'))
