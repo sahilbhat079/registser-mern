@@ -11,8 +11,7 @@ import { BrowserRouter,Routes,Route } from 'react-router-dom'
 function App() {
   return (
  <>
- <div>working</div>
- <BrowserRouter basename='/'>
+ <BrowserRouter >
  <Routes>
 <Route path="/register" element={<Signup />}/>
 <Route path="/login" element={<Login/>}/>
