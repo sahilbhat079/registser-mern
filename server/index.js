@@ -7,7 +7,7 @@ const Employemodel =require('./models/Employe')
 app.use(express.json())
 app.use(cors(
 {
-origin:[""],
+origin:["frontend-navy-one.vercel.app"],
 methods:["POST","GET"],
 credentials:true
 } ))
