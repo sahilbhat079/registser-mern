@@ -15,7 +15,7 @@ export default function Login() {
     function handlesubmit(e){
         e.preventDefault();
         console.log({name,email,password});
-        axios.post('registser-mern-api.vercel.app/login',{email,password} ).then((res)=>{
+        axios.post('https://registser-mern-api.vercel.app/login',{email,password} ).then((res)=>{
             console.log(res)
             if(res.data=='success')
             navigate( "/home");

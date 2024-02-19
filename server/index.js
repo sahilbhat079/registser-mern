@@ -42,7 +42,7 @@ app.post('/login',(req,res)=>{
 
 
 app.post('/register',(req,res)=>{
-   Employemodel.create(req.body)
+  Employemodel.create(req.body)
    .then((employe)=>res.json(employe))
    .catch((err)=>res.json(err))
 });
