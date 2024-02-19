@@ -7,7 +7,7 @@ const Employemodel =require('./models/Employe')
 app.use(express.json())
 app.use(cors(
 {
-origin:["https://registser-mern.vercel.app"],
+origin:["https://gleeful-naiad-af9083.netlify.app"],
 methods:["POST","GET"],
 credentials:true
 } ))
