@@ -9,12 +9,13 @@ import { useNavigate } from 'react-router-dom';
 export default function Login() {
     const [email, setemail] = useState("");
     const [password, setPassword] = useState("");
+    axios.defaults.withCredentials=true;
     const navigate=useNavigate();
 
     function handlesubmit(e){
         e.preventDefault();
         console.log({name,email,password});
-        axios.post('http://localhost:3000/login',{email,password} ).then((res)=>{
+        axios.post('registser-mern-api.vercel.app/login',{email,password} ).then((res)=>{
             console.log(res)
             if(res.data=='success')
             navigate( "/home");

@@ -9,12 +9,13 @@ export default function Signup() {
     const [name, setName] = useState('');
     const [email, setemail] = useState("");
     const [password, setPassword] = useState("");
+    axios.defaults.withCredentials=true;
     const navigate=useNavigate();
 
     function handlesubmit(e){
         e.preventDefault();
         console.log({name,email,password});
-        axios.post('http://localhost:3000/register',{name,email,password} ).then((res)=>{
+        axios.post('registser-mern-api.vercel.app/register',{name,email,password} ).then((res)=>{
             console.log(res)
             navigate( "/login");
 
