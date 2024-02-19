@@ -64,8 +64,6 @@ export default function Login() {
   don't have account
 </p>
 <Link to='/register' className='btn btn-default border w-100 bg-light rounded-0  text-decoration-none '>register</Link>
-
-r
     </div>
 
    </div>

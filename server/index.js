@@ -12,10 +12,15 @@ methods:["POST","GET"],
 credentials:true
 } ))
 
+
 mongoose.connect("mongodb+srv://stephenjames079:leOOpIp4pYWQHd0i@cluster0.swsrryq.mongodb.net/register?retryWrites=true&w=majority")
 .then(()=>console.log('connected to the database'))
 .catch((err)=>
 console.log(err))
+
+app.get("/",(req,res)=>{
+res.send("hello world");
+});
 
 
 app.post('/login',(req,res)=>{
