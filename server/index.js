@@ -13,7 +13,7 @@ credentials:true
 } ))
 
 console.log("connecting");
-mongoose.connect("mongodb+srv://stephenjames079:leOOpIp4pYWQHd0i@cluster0.swsrryq.mongodb.net/register?retryWrites=true&w=majority")
+mongoose.connect("mongodb+srv://stephenjames079:leOOpIp4pYWQHd0i@cluster0.swsrryq.mongodb.net/?retryWrites=true&w=majority")
 .then(()=>console.log('connected to the database'))
 .catch((err)=>
 console.log(err))
