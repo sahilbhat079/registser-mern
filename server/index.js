@@ -7,7 +7,7 @@ const Employemodel =require('./models/Employe')
 app.use(express.json())
 app.use(cors(
 {
-origin:["https://registser-mern-api.vercel.app/"],
+origin:["https://registser-mern.vercel.app/"],
 methods:["POST","GET"],
 credentials:true
 } ))
