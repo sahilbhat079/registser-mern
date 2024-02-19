@@ -12,7 +12,7 @@ function App() {
   return (
  <>
  <div>working</div>
- <BrowserRouter>
+ <BrowserRouter basename='/'>
  <Routes>
 <Route path="/register" element={<Signup />}/>
 <Route path="/login" element={<Login/>}/>
