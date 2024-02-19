@@ -9,7 +9,7 @@ export default function Signup() {
     const [name, setName] = useState('');
     const [email, setemail] = useState("");
     const [password, setPassword] = useState("");
-    // axios.defaults.withCredentials=true;
+    axios.defaults.withCredentials=true;
     const navigate=useNavigate();
 
     function handlesubmit(e){
