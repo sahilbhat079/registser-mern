@@ -7,12 +7,12 @@ const Employemodel =require('./models/Employe')
 app.use(express.json())
 app.use(cors(
 {
-origin:["frontend-navy-one.vercel.app"],
+origin:["https://registser-mern-api.vercel.app/"],
 methods:["POST","GET"],
 credentials:true
 } ))
 
-
+console.log("connecting");
 mongoose.connect("mongodb+srv://stephenjames079:leOOpIp4pYWQHd0i@cluster0.swsrryq.mongodb.net/register?retryWrites=true&w=majority")
 .then(()=>console.log('connected to the database'))
 .catch((err)=>
