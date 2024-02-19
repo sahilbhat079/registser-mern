@@ -22,6 +22,11 @@ app.get("/",(req,res)=>{
 res.send("hello world");
 });
 
+app.get("/register",(req,res)=>{
+    res.send("register route");
+    });
+    
+
 
 app.post('/login',(req,res)=>{
     const {email,password} = req.body;
