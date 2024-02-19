@@ -63,7 +63,7 @@ export default function Login() {
 <p>
   don't have account
 </p>
-<Link to='/register' className='btn btn-default border w-100 bg-light rounded-0  text-decoration-none '>register</Link>
+<Link to='/' className='btn btn-default border w-100 bg-light rounded-0  text-decoration-none '>register</Link>
     </div>
 
    </div>
