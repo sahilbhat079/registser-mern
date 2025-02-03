@@ -1,6 +1,8 @@
 const express = require('express')
 const app = express()
 //cors are set
+
+// and all set
 const mongoose=require('mongoose');
 const cors =require('cors')
 const Employemodel =require('./models/Employe')
